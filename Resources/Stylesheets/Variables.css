@@ -1,0 +1,375 @@
+a {
+  background: url("/path/to/image.png") 0 0 repeat;
+}
+body {
+  position: fixed!important;
+}
+@font-face {
+  font-family: 'Sertig';
+  src: url(Sertig.otf);
+}
+.Content {
+  z-index: 1000;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.Content > a {
+  width: 100px;
+  height: 100px;
+  float: left;
+  z-index: 101;
+  position: relative;
+  opacity: 0;
+}
+#MenuBackLayer {
+  position: absolute;
+  z-index: 11;
+}
+#Home {
+  float: right;
+  border-top-right-radius: 90px;
+}
+#Home:target ~ #MenuFrontLayer {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#Home:target ~ #BackgroundContent {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#About {
+  border-bottom-right-radius: 90px;
+}
+#About:target ~ #MenuFrontLayer {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#About:target ~ #BackgroundContent {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#Whut {
+  clear: left;
+  border-bottom-left-radius: 90px;
+}
+#Whut:target ~ #MenuFrontLayer {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#Whut:target ~ #BackgroundContent {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#Projects {
+  border-top-left-radius: 90px;
+}
+#Projects:target ~ #MenuFrontLayer {
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#Projects:target ~ #BackgroundContent {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  -moz-transition: -moz-transform 1s ease-in;
+  -ms-transition: -ms-transform 1s ease-in;
+  -o-transition: -o-transform 1s ease-in;
+  transition: transform 1s ease-in;
+}
+#MenuFrontLayer {
+  z-index: 100;
+  position: absolute;
+}
+#BackgroundContent {
+  position: absolute;
+  top: -1005px;
+  left: -1005px;
+  margin: 0 auto;
+  height: 2000px;
+  width: 2000px;
+  z-index: 10;
+  margin: 5px;
+}
+#BackgroundContent > div {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  padding: 0px;
+  float: left;
+}
+#HomeContent {
+  background-color: #ffcc99;
+  background: -moz-linear-gradient(130deg, #ffcc99 23%, #ffffff 64%);
+  background: -webkit-linear-gradient(130deg, #ffcc99 23%, #ffffff 64%);
+  background: -o-linear-gradient(130deg, #ffcc99 23%, #ffffff 64%);
+  background: -ms-linear-gradient(130deg, #ffcc99 23%, #ffffff 64%);
+  background: linear-gradient(130deg, #ffcc99 23%, #ffffff 64%);
+}
+#HomeContent .Ribbon > div {
+  background: #d2691e;
+  outline: none;
+}
+#HomeContent .Ribbon > div:before,
+#HomeContent .Ribbon > div:after {
+  border-bottom-color: #d2691e;
+  border-top-color: #d2691e;
+}
+#HomeContent .Ribbon > div:before {
+  border-right-color: #b44b00;
+}
+#HomeContent .Ribbon > div:after {
+  border-left-color: #b44b00;
+}
+#AboutContent {
+  background-color: #99cc99;
+  background: -moz-linear-gradient(130deg, #99cc99 23%, #ffffff 64%);
+  background: -webkit-linear-gradient(130deg, #99cc99 23%, #ffffff 64%);
+  background: -o-linear-gradient(130deg, #99cc99 23%, #ffffff 64%);
+  background: -ms-linear-gradient(130deg, #99cc99 23%, #ffffff 64%);
+  background: linear-gradient(130deg, #99cc99 23%, #ffffff 64%);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+#AboutContent .Ribbon > div {
+  background: #64aa64;
+  outline: none;
+}
+#AboutContent .Ribbon > div:before,
+#AboutContent .Ribbon > div:after {
+  border-bottom-color: #64aa64;
+  border-top-color: #64aa64;
+}
+#AboutContent .Ribbon > div:before {
+  border-right-color: #468c46;
+}
+#AboutContent .Ribbon > div:after {
+  border-left-color: #468c46;
+}
+#WhutContent {
+  background-color: #99ccdd;
+  background: -moz-linear-gradient(130deg, #99ccdd 23%, #ffffff 64%);
+  background: -webkit-linear-gradient(130deg, #99ccdd 23%, #ffffff 64%);
+  background: -o-linear-gradient(130deg, #99ccdd 23%, #ffffff 64%);
+  background: -ms-linear-gradient(130deg, #99ccdd 23%, #ffffff 64%);
+  background: linear-gradient(130deg, #99ccdd 23%, #ffffff 64%);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#WhutContent .Ribbon > div {
+  background: #28b4d2;
+  outline: none;
+}
+#WhutContent .Ribbon > div:before,
+#WhutContent .Ribbon > div:after {
+  border-bottom-color: #28b4d2;
+  border-top-color: #28b4d2;
+}
+#WhutContent .Ribbon > div:before {
+  border-right-color: #0a96b4;
+}
+#WhutContent .Ribbon > div:after {
+  border-left-color: #0a96b4;
+}
+#ProjectsContent {
+  background-color: #aacc22;
+  background: -moz-linear-gradient(130deg, #aacc22 23%, #ffffff 64%);
+  background: -webkit-linear-gradient(130deg, #aacc22 23%, #ffffff 64%);
+  background: -o-linear-gradient(130deg, #aacc22 23%, #ffffff 64%);
+  background: -ms-linear-gradient(130deg, #aacc22 23%, #ffffff 64%);
+  background: linear-gradient(130deg, #aacc22 23%, #ffffff 64%);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#ProjectsContent .Ribbon > div {
+  background: #82a00a;
+  outline: none;
+}
+#ProjectsContent .Ribbon > div:before,
+#ProjectsContent .Ribbon > div:after {
+  border-bottom-color: #82a00a;
+  border-top-color: #82a00a;
+}
+#ProjectsContent .Ribbon > div:before {
+  border-right-color: #648200;
+}
+#ProjectsContent .Ribbon > div:after {
+  border-left-color: #648200;
+}
+.Header {
+  display: block;
+  height: 250px;
+}
+.Ribbon {
+  height: 50px;
+  width: 250px;
+  z-index: 1;
+  position: relative;
+  margin: 5% 40%;
+}
+.Ribbon > div {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 4px 13px black;
+}
+.Ribbon > div:before,
+.Ribbon > div:after {
+  content: "";
+  z-index: -1;
+  border-width: 25px;
+  border-style: solid;
+  top: 60%;
+  position: relative;
+}
+.Ribbon > div:before {
+  border-left-color: transparent;
+  left: -12%;
+  box-shadow: 6px 2px 7px -2px #000000;
+}
+.Ribbon > div:after {
+  border-right-color: transparent;
+  left: 72%;
+  box-shadow: -6px 2px 7px -2px #000000;
+}
+.Ribbon > div span {
+  position: absolute;
+  top: 30%;
+  font-size: 2.7em;
+  font-family: Sertig;
+  text-align: center;
+  opacity: 0.7;
+  left: 0;
+  width: 100%;
+}
+.PageHome {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 100px;
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 100px;
+  -o-perspective: 800px;
+  -o-perspective-origin: 50% 100px;
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+  width: 80%;
+  height: 500px;
+  margin: 10px 5%;
+  padding: 10px;
+  background-color: red;
+}
+.PageHome:hover {
+  -webkit-animation-name: myAni;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 4;
+}
+@-webkit-keyframes myAni {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@-moz-keyframes myAni {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@-ms-keyframes myAni {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@-o-keyframes myAni {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes myAni {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}

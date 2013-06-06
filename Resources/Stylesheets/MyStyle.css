@@ -1,0 +1,396 @@
+
+body{
+    position: fixed!important;
+}
+
+#topLeft:target ~ .EllipseSmall{
+
+    -webkit-transform: rotate(315deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+#topRight:target ~ .EllipseSmall{
+        -webkit-transform: rotate(45deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+#bottomLeft:target ~ .EllipseSmall{
+        -webkit-transform: rotate(225deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+#bottomRight:target ~ .EllipseSmall{
+        -webkit-transform: rotate(135deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+
+
+#topLeft:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(270deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+
+#topRight:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(0deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+
+}
+#bottomLeft:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(180deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+
+}
+#bottomRight:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(90deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+
+}
+
+
+  #backgroundWrapper {
+
+    margin:5px;
+    width:1000px;
+    height:100%;
+  }
+
+
+#backgroundSpinner{
+    position: absolute;
+    top:-1000px;
+    left:-1000px;
+    margin: 0 auto;
+    height: 2000px;
+    width: 2000px;
+    z-index: 10;
+
+}
+  #backgroundSpinner .face {
+    position: relative;
+    width: 1000px;
+	height: 1000px;
+    padding: 0px;
+    float:left;
+  }
+
+
+#one{
+    -webkit-transform: rotate(180deg);
+}
+#two{
+	-webkit-transform: rotate(270deg);
+}
+#three{
+    clear:left;
+    -webkit-transform: rotate(90deg);
+    
+}
+#four{
+
+
+
+
+}
+#one .rectangel{
+    background: maroon;
+}
+#one .rectangel:before{
+    border-right-color:maroon;
+}
+ #one .rectangel:after{
+    border-left-color:maroon;
+}
+#one .rectangel:before, #one .rectangel:after
+{
+    border-bottom-color:maroon;
+    border-top-color: maroon;
+
+}
+
+
+
+#two .rectangel{
+    background: chocolate;
+    outline: none;
+}
+#two .rectangel:before{
+    border-right-color:rgb(160, 77, 18);
+}
+ #two .rectangel:after{
+    border-left-color:rgb(160, 77, 18);
+}
+#two .rectangel:before, #two .rectangel:after
+{
+    border-bottom-color:chocolate;
+    border-top-color: chocolate;
+    top:55%;
+}
+
+
+#three .rectangel{
+    background: maroon;
+}
+#three .rectangel:before{
+    border-right-color:maroon;
+}
+ #three .rectangel:after{
+    border-left-color:maroon;
+}
+#three .rectangel:before, #three .rectangel:after
+{
+    border-bottom-color:maroon;
+    border-top-color: maroon;
+}
+
+#four .rectangel{
+    background: maroon;
+}
+#four .rectangel:before{
+    border-right-color:maroon;
+}
+ #four .rectangel:after{
+    border-left-color:maroon;
+}
+#four .rectangel:before, #four .rectangel:after
+{
+    border-bottom-color:maroon;
+    border-top-color: maroon;
+}
+
+
+.rectangel:before, .rectangel:after{
+
+    content: "";
+    z-index: -1;
+    border-width: 25px;
+    border-style: solid;
+    top: 60%;
+    position: relative;
+}
+
+.rectangel:before
+{
+    border-left-color:transparent;
+    left: -12%;
+    box-shadow: 6px 2px 7px -2px black;
+}
+.rectangel:after
+{
+    border-right-color:transparent;
+    left: 72%;
+    box-shadow: -6px 2px 7px -2px black;
+}
+
+@font-face {
+    font-family: Sertig;
+    src: url(Sertig.otf);
+}
+.rectangelMain{
+
+    height: 50px;
+    width: 250px;
+    z-index: 1;
+    position: relative;
+}
+.rectangel{
+    height: 100%;
+    width: 100%;
+    /*background: maroon;*/
+    outline: 2px solid #aacc22;
+    box-shadow: 0px 4px 13px black;
+
+}
+.rectangelMain span
+{
+    position: absolute;
+    color: greenyellow;
+    top: 30%;
+    font-size: 2.7em;
+    font-family: Sertig;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.headerBanner{
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 150px;
+    width: 600px;
+}
+.ribbon{
+    height: 75px;
+    width: 400px;
+    background: gray;
+    position: relative;
+}
+.ribbon:before{
+    content: "";
+position: absolute;
+width: 120%;
+top: 29px;
+left: -15%;
+z-index: -1;
+background: transparent;
+height: 0;
+border: 25px solid gray;
+border-left-color: transparent;
+border-right-color: transparent;
+
+}
+.ribbon:after{
+    content: "";
+}
+
+
+/*.headerBanner div
+{
+    position: relative;
+}
+.rectangel{
+    width:600px;
+    height: 100px;
+    border:10px solid wheat;
+    background: maroon;
+    left: 9%;
+    -webkit-box-sizing: border-box;
+}
+.triangel
+{
+    height: 0px;
+    width: 0px;
+}
+
+.triangel .top{
+    margin-top: 20px;
+    margin-bottom: -70px;
+    border-top: 100px solid maroon;
+
+}
+.triangel .bottom{
+    margin-top: -80px;
+    border-bottom: 100px solid maroon;
+    
+}
+.triangel.left{
+    float:left;
+}
+.triangel.right{
+    float:right;
+}
+.triangel.left div{
+    border-left: 100px solid transparent;
+}
+
+.triangel.right div{
+    border-right: 100px solid transparent;
+}
+*/
+
+
+#one
+{
+	background-color: #99cc99;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #99cc99 23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #99cc99 23%, #ffffff 64%);
+
+}
+#two
+{
+	background-color: #ffcc99;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #ffcc99 23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #ffcc99 23%, #ffffff 64%);	
+}
+#three
+{
+		background-color: #99ccdd;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #99ccdd 23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #99ccdd 23%, #ffffff 64%);
+}
+#four
+{
+		background-color: #aacc22;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #aacc22  23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #aacc22  23%, #ffffff 64%);
+}
+
+
+#backgroundLayer{
+	position: absolute;
+}
+
+.EllipseBig
+{
+    z-index: 1000;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+
+    box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
+
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    border-bottom-left-radius: 110px;
+    border-top-left-radius: 110px;
+
+
+}
+.EllipseSmall
+{		
+	transition:all 1s ease-in-out;
+    -webkit-transform: rotate(45deg); 
+	position: absolute;
+}
+#backgroundLayer, .EllipseSmall
+{
+    z-index: 100;
+}
+.area
+{
+	width: 100px;
+	height: 100px;
+	float:left;
+	z-index: 101;
+	position: relative;
+	opacity: 0;
+
+}
+#topLeft
+{
+	background-color: red;
+	border-top-left-radius: 90px;
+
+}
+#topRight
+{
+	background-color: green;
+	border-top-right-radius: 90px;
+
+}
+#bottomLeft
+{
+	background-color: blue;
+	clear:left;
+	border-bottom-left-radius: 90px;
+
+}
+#bottomRight
+{
+	background-color: yellow;
+	border-bottom-right-radius: 90px;
+
+}

@@ -1,0 +1,249 @@
+
+body{
+    position: fixed!important;
+}
+
+#topLeft:target ~ .EllipseSmall{
+
+    -webkit-transform: rotate(315deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+#topRight:target ~ .EllipseSmall{
+        -webkit-transform: rotate(45deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+#bottomLeft:target ~ .EllipseSmall{
+        -webkit-transform: rotate(225deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+#bottomRight:target ~ .EllipseSmall{
+        -webkit-transform: rotate(135deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+
+
+#topLeft:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(270deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+}
+
+#topRight:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(0deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+
+}
+#bottomLeft:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(180deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+
+}
+#bottomRight:target ~ #backgroundWrapper #backgroundSpinner{
+        -webkit-transform: rotate(90deg);  
+    -webkit-transition: -webkit-transform 1s ease-in;
+
+}
+
+
+  #backgroundWrapper {
+
+    margin:5px;
+    width:1000px;
+    height:100%;
+  }
+
+
+#backgroundSpinner{
+    position: absolute;
+    top:-1000px;
+    left:-1000px;
+    margin: 0 auto;
+    height: 2000px;
+    width: 2000px;
+    z-index: 10;
+
+}
+  #backgroundSpinner .face {
+    position: relative;
+    width: 1000px;
+	height: 1000px;
+    padding: 0px;
+    float:left;
+  }
+
+
+#one{
+-webkit-transform: rotate(180deg);
+}
+#two{
+	-webkit-transform: rotate(270deg);
+}
+#three{
+    clear:left;
+    -webkit-transform: rotate(90deg);
+    
+}
+#four{
+
+}
+
+.headerBanner{
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 150px;
+    width: 600px;
+}
+.headerBanner div
+{
+    position: relative;
+}
+.rectangel{
+    width:600px;
+    height: 100px;
+    border:10px solid wheat;
+    background: maroon;
+    left: 9%;
+    -webkit-box-sizing: border-box;
+}
+.triangel
+{
+    height: 0px;
+    width: 0px;
+}
+
+.triangel .top{
+    margin-top: 20px;
+    margin-bottom: -70px;
+    border-top: 100px solid maroon;
+
+}
+.triangel .bottom{
+    margin-top: -80px;
+    border-bottom: 100px solid maroon;
+    
+}
+.triangel.left{
+    float:left;
+}
+.triangel.right{
+    float:right;
+}
+.triangel.left div{
+    border-left: 100px solid transparent;
+}
+
+.triangel.right div{
+    border-right: 100px solid transparent;
+}
+
+
+
+#one
+{
+	background-color: #99cc99;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #99cc99 23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #99cc99 23%, #ffffff 64%);
+
+}
+#two
+{
+	background-color: #ffcc99;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #ffcc99 23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #ffcc99 23%, #ffffff 64%);	
+}
+#three
+{
+		background-color: #99ccdd;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #99ccdd 23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #99ccdd 23%, #ffffff 64%);
+}
+#four
+{
+		background-color: #aacc22;
+/*	background: rgb(153, 204, 153);*/
+/*background: -moz-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: -webkit-linear-gradient(40deg, #aacc22  23%, #ffffff 64%);
+/*background: -o-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);
+background: -ms-linear-gradient(40deg, rgb(153, 204, 153) 23%, rgb(250, 230, 255) 64%);*/
+background: linear-gradient(130deg, #aacc22  23%, #ffffff 64%);
+}
+
+
+#backgroundLayer{
+	position: absolute;
+}
+
+.EllipseBig
+{
+    z-index: 1000;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+
+    box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.75);
+
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    border-bottom-left-radius: 110px;
+    border-top-left-radius: 110px;
+
+
+}
+.EllipseSmall
+{		
+	transition:all 1s ease-in-out;
+    -webkit-transform: rotate(45deg); 
+	position: absolute;
+}
+#backgroundLayer, .EllipseSmall
+{
+    z-index: 100;
+}
+.area
+{
+	width: 100px;
+	height: 100px;
+	float:left;
+	z-index: 101;
+	position: relative;
+	opacity: 0;
+
+}
+#topLeft
+{
+	background-color: red;
+	border-top-left-radius: 90px;
+
+}
+#topRight
+{
+	background-color: green;
+	border-top-right-radius: 90px;
+
+}
+#bottomLeft
+{
+	background-color: blue;
+	clear:left;
+	border-bottom-left-radius: 90px;
+
+}
+#bottomRight
+{
+	background-color: yellow;
+	border-bottom-right-radius: 90px;
+
+}
